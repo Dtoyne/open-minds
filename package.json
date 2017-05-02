@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Dtoyne/open-minds/issues"
   },
-  "homepage": "https://github.com/Dtoyne/open-minds#readme"
+  "homepage": "https://github.com/Dtoyne/open-minds#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
