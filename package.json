@@ -1,0 +1,19 @@
+{
+  "name": "open-minds",
+  "version": "1.0.0",
+  "description": "mockup for client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dtoyne/open-minds.git"
+  },
+  "author": "Dylan Toyne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dtoyne/open-minds/issues"
+  },
+  "homepage": "https://github.com/Dtoyne/open-minds#readme"
+}
