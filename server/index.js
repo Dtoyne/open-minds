@@ -1,8 +1,9 @@
 // require('dotenv').config();
 
-const express = require('express');
-const app = express();
-const PORT = 8080;
+const express       = require('express');
+const app           = express();
+const bodyParser    = require('body-parser');
+const PORT          = 8080;
 
 // app.set('view engine', 'ejs');
 
