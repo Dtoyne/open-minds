@@ -8,31 +8,31 @@ const PORT          = 8080;
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('/main');
+  res.render('index', { title: 'index' });
 });
 
 app.get('/speakers', (req, res) => {
-  res.render('/speakers');
+  res.render('speakers', { title: 'speakers' });
 });
 
 app.get('/about', (req, res) => {
-  res.render('/about');
+  res.render('about', { title: 'about' });
 });
 
 app.get('/speakerseries', (req, res) => {
-  res.render('/speakerseries');
+  res.render('speakerseries', { title: 'speakerseries' });
 });
 
 app.get('/contact', (req, res) => {
-  res.render('/contact');
+  res.render('contact', { title: 'contact' });
 });
 
 app.get('/workshops', (req, res) => {
-  res.render('/workshops');
+  res.render('workshops', { title: 'workshops' });
 });
 
 app.get('/archive', (req, res) => {
-  res.render('/archive');
+  res.render('archive', { title: 'archive' });
 });
 
 app.post('/', (req, res) => {
