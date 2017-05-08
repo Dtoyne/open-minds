@@ -11,6 +11,26 @@ app.get('/', (req, res) => {
   res.render('index', { title: 'index' });
 });
 
+app.get('/login', (req, res) => {
+  res.render('login)', { title: 'login'});
+});
+
+//PassportJS Authentication Examples:
+
+app.post('/login', passport.authenticate('local', { successRedirect: '/',
+                                                    failureRedirect: '/login' }
+));
+
+app.post('/login',
+  passport.authenticate('local'),
+  function(req, res) {
+    // If this function gets called, authentication was successful;
+    // 'req.user' contains the authenticated user;
+    res.redirect('/users/' + req.user.username);
+  });
+
+
+
 /*
 
 Routes likely not needed for SPA:
