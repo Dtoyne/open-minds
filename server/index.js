@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
   res.render('index', { title: 'index' });
 });
 
+/*
+
+Routes likely not needed for SPA:
+
 app.get('/speakers', (req, res) => {
   res.render('speakers', { title: 'speakers' });
 });
@@ -34,6 +38,8 @@ app.get('/workshops', (req, res) => {
 app.get('/archive', (req, res) => {
   res.render('archive', { title: 'archive' });
 });
+
+*/
 
 app.post('/', (req, res) => {
   if (!req.body) {
